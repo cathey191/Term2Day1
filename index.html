@@ -33,14 +33,28 @@
 			<p>'text here' called a string</p>
 			<p>dom = Document</p>
 			<p>dir dig down into element</p>
+			<br />
+			<h3>Function Steps</h3>
+			<ol>
+				<li>Write the function</li>
+				<li>Fire function</li>
+			</ol>
 		</div>
 		<div class="section">
 			<h3 id="domHeader">Hi There</h3>
 		</div>
 		<script>
 			// Grabbing the elemtne from the dom
-			var getId = document.getElementById('domHeader');
-			console.dir(getId.textContent);
+			function doSomething (){
+				var getId = document.getElementById('domHeader');
+				getId.style.color = 'pink';
+			}
+			setTimeout(doSomething, 5000)
+			// doSomething();
+
+			// var getId = document.getElementById('domHeader');
+			// console.dir(getId.textContent);
+			// getId.style.color = 'pink';
 
 			// Below we have a line of code - Comment
 			// var numberA = 250;
